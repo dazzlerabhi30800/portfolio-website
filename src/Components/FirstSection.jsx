@@ -13,7 +13,7 @@ function FirstSection() {
             imageRef.current = gsap.timeline()
                 .fromTo('.avatar--img', { opacity: 0, x: 1000 }, { opacity: 1, x: 0, duration: 3, ease: "elastic" }, "<");
             profileRef.current = gsap.timeline()
-                .fromTo('.avatar--img img', { opacity: 0, y: -500 }, { opacity: 1, y: 0, duration: 2, delay: .5 });
+                .fromTo('.avatar--img img', { opacity: 0, y: -500 }, { opacity: 1, y: 0, duration: 1, delay: .5 });
         })
 
 

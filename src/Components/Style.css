@@ -4,6 +4,7 @@ body {
 
 :root {
     --font-Newake: 'Newake', sans-serif;
+    --background-position: 10vw;
 }
 
 header {
@@ -34,7 +35,7 @@ nav>ul {
 
 nav>ul>li>a {
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600;
     color: white;
     position: relative;
     transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
@@ -63,11 +64,12 @@ nav>ul>li>a:hover::after {
 /* FIRST SECTION  */
 .first--section {
     display: flex;
+    flex-direction: column;
     gap: 1rem;
     align-items: center;
     padding: 1rem;
-    justify-content: space-around;
-    height: 600px;
+    justify-content: center;
+    height: 800px;
     margin: 5px;
 }
 
@@ -76,10 +78,10 @@ nav>ul>li>a:hover::after {
     font-family: var(--font-Newake);
     color: white;
     width: 500px;
+    text-align: center;
 }
 
 .name {
-    /* background: linear-gradient(to left, #f06464 50%, #e03d73 50%); */
     background: linear-gradient(75deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     padding: 5px;
     -webkit-background-clip: text;
@@ -88,10 +90,11 @@ nav>ul>li>a:hover::after {
     -text-fill-color: transparent;
     transition: all .5s linear;
     cursor: pointer;
+    background-position: calc(var(--background-position) * 10);
 }
 
 .name:hover {
-    animation: slideBg 5s linear infinite alternate;
+    animation: slideBg 5s linear;
 }
 
 .avatar--img {
@@ -127,20 +130,44 @@ nav>ul>li>a:hover::after {
 }
 
 @keyframes slideBg {
-    25% {
-        background-position: 10vw;
+    10% {
+        background-position: var(--background-position);
+    }
+
+    20% {
+        background-position: calc(var(--background-position) * 2);
+    }
+
+    30% {
+        background-position: calc(var(--background-position) * 3);
+    }
+
+    40% {
+        background-position: calc(var(--background-position) * 4);
     }
 
     50% {
-        background-position: 20vw;
+        background-position: calc(var(--background-position) * 5);
     }
 
-    75% {
-        background-position: 30vw;
+    60% {
+        background-position: calc(var(--background-position) * 6);
+    }
+
+    70% {
+        background-position: calc(var(--background-position) * 7);
+    }
+
+    80% {
+        background-position: calc(var(--background-position) * 8);
+    }
+
+    90% {
+        background-position: calc(var(--background-position) * 9);
     }
 
     100% {
-        background-position: 20vw;
+        background-position: calc(var(--background-position) * 10);
     }
 }
 
@@ -154,5 +181,18 @@ nav>ul>li>a:hover::after {
 
     nav>ul>li>a {
         cursor: pointer;
+    }
+}
+
+
+@media Screen and (min-width: 950px) {
+    .first--section {
+        flex-direction: row;
+        height: 600px;
+        justify-content: space-around;
+    }
+
+    .text--section {
+        margin: 0;
     }
 }
