@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap');
+@import './FirstSection.css';
+@import './AboutSection.css';
+@import './ProjectSection.css';
+
+body {
+    background: radial-gradient(circle, #dbdbd9, #b4b4b3);
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+}
+
+:root {
+    --font-Newake: 'Newake', sans-serif;
+    --background-position: 10vw;
+    --font-Major-Mono-Display: 'Major Mono Display', monospace;
+}
+
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .3s linear;
+}
+
+
+header {
+    color: red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 1rem;
+}
+
+nav {
+    padding: 1rem;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: var(--font-Major-Mono-Display);
+}
+
+nav>ul>li>a::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    bottom: -5px;
+    height: 2px;
+    background: white;
+    left: 0;
+    border-radius: 30px;
+    transition: all .3s cubic-bezier(0.39, 0.575, 0.565, 1);
+}
+
+
+nav>ul>li>a:hover::after {
+    width: 100%;
+}
+
+
+
+
+@media (hover: hover) {
+    header>svg {
+        cursor: pointer;
+    }
+
+    nav>ul>li>a {
+        cursor: pointer;
+    }
+    .languages--wrapper > span {
+        cursor: pointer;
+    }
+    .links--wrapper > a {
+        cursor: pointer;
+    }
+}
+
+

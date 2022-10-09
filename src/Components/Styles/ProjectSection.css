@@ -1,0 +1,130 @@
+
+/* Project Section  */
+.project--section {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    font-size: 1.7rem;
+    background: white;
+    padding: 8px 1rem;
+    width: 350px;
+    text-align: center;
+    box-shadow: -7px 5px 0px 3px #ecebeb;
+    text-transform: uppercase;
+    font-family: var(--font-Newake);
+    font-weight: 700;
+}
+.select > select {
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    -webkit-appearance: none;
+    transition: all .3s linear;
+}
+.select select > option {
+    background-color: #e4ced9;
+    transition: all .3s linear
+}
+
+.select select:focus > option:checked {
+    background-color: #f77dc8;
+}
+.project--wrapper {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    place-content: center;
+    place-items: center;
+    padding: 1rem;
+}
+.project--wrapper > .project--card {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: linear-gradient(to bottom, #f1f0ef, #dad7d6);
+    border-radius: 5px;
+    box-shadow: 1px 1px 20px 3px #0000002f;
+}
+.project--wrapper > .project--card > img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: all .3s linear;
+}
+.project--card:hover > img {
+    transform: scale(.98);
+}
+.project--card > .project--title {
+    font-size: 1.4rem;
+    font-family: var(--font-Newake);
+    margin: 0px 0px 0px 10px;
+}
+.project--card > .languages--wrapper {
+    margin: 0px 0px 0px 10px;
+    width: fit-content;
+    padding: 5px;
+    font-weight: 500;
+    display: flex;
+    gap: 1rem;
+}
+.languages--wrapper > span[lang="HTML"]{
+    background: #cfb108;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+}
+.languages--wrapper > span[lang="CSS"]{
+    background: #e62991;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+}
+.languages--wrapper > span[lang="REACT"]{
+    background: #7749f3;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+}
+.languages--wrapper > span[lang="JS"]{
+    background: #f3740c;
+    padding: 5px 8px;
+    border-radius: 5px;
+    color: white;
+}
+.project--card > .links--wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 10px 13px 1rem;
+}
+.links--wrapper > a {
+    text-decoration: none;
+    font-weight: 500;
+}
+.links--wrapper  a:nth-child(1) {
+    background: linear-gradient(90deg, #363636, #504f4f);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s linear;
+}
+.links--wrapper a:nth-child(1):hover {
+    background: linear-gradient(90deg, #4b4a4a, #706f6f);
+}
+.links--wrapper  a:nth-child(2) {
+    background: linear-gradient(90deg, #e958e2, #5b3aee);
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all .3s linear;
+}
+.links--wrapper  a:nth-child(2):hover {
+    background: linear-gradient(90deg, #e958e2a6, #5b3aeea2);
+}
