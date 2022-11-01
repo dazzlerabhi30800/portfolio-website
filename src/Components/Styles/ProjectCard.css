@@ -1,0 +1,46 @@
+/* Project Card  */
+.project--card.todo {
+  background-image: linear-gradient(90deg, #bbb7f7, #dcb0f5);
+}
+.project--card.tracker {
+  background-image: linear-gradient(90deg, #a5bbf7, #b0dcf5);
+}
+.project--card.form {
+  background-image: linear-gradient(90deg, #f7b5a5, #f89e9e);
+}
+.project--card.profile--comp {
+  background-image: linear-gradient(90deg, #fa6e6e, #f077d5);
+}
+.project--card.card--comp {
+  background-image: linear-gradient(90deg, #af6efa, #f07787);
+}
+.project--card.url {
+  background-image: linear-gradient(90deg, #9ff5f5, #a9f5af);
+}
+.project--card.news--homepage {
+  background-image: linear-gradient(90deg, #f5b09f, #b4a9f5);
+}
+
+
+/* Project Image */
+.project--card.todo > .project--img {
+  background: linear-gradient(90deg, #8751ec 0%, #c461f1 54%, #5d60f0 100%);
+}
+.project--card.tracker > .project--img {
+  background: linear-gradient(90deg, #51a1ec 0%, #61cff1 54%, #5d7ff0 100%);
+}
+.project--card.form > .project--img {
+  background: linear-gradient(90deg, #ec5b51 0%, #f18a61 54%, #f0625d 100%);
+}
+.project--card.profile--comp > .project--img {
+  background: linear-gradient(90deg, #b1aead 0%, #7661f1 54%, #f75151 100%);
+}
+.project--card.card--comp > .project--img {
+  background: linear-gradient(90deg, #3d2e79 0%, #271781 54%, #f751c5 100%);
+}
+.project--card.url> .project--img {
+  background: linear-gradient(90deg, #4efaaa 0%, #b2f55a 54%, #46f079 100%);
+}
+.project--card.news--homepage> .project--img {
+  background: linear-gradient(90deg, #faee4e 0%, #f55a5a 54%, #4649f0 100%);
+}
