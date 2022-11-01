@@ -25,7 +25,7 @@ function App() {
     if (themeLocal) {
       setTheme(themeLocal);
     }
-  });
+  }, []);
 
   useEffect(() => {
     handleLevel();
