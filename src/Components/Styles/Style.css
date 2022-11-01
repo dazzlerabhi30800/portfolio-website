@@ -59,7 +59,7 @@ nav {
   height: 0;
   overflow: hidden;
   opacity: 0;
-  transition: all .7s ease-in-out;
+  transition: all 0.7s ease-in-out;
   transform: translateY(-400px);
 }
 nav.active {
@@ -169,6 +169,7 @@ body.light .menu--btn {
     overflow: visible;
     grid-column-start: 2;
     transform: translateY(0px);
+    place-self: center;
   }
   nav > ul {
     flex-direction: row;

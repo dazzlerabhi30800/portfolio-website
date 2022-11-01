@@ -16,7 +16,6 @@ function AboutSection() {
     `;
    
     
-  
   return (
     <section className="about--section" id="about">
       <Slide>

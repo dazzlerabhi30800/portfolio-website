@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import ProjectCard from './ProjectCard';
-import data from './ProjectCardData';
 import Spinner from './Spinner';
 
-function Project() {
+function Project({data, setLevel, filterProjects, fetch}) {
   const [showMore, setShowMore] = useState(false);
   const [loading, setLoading] = useState(false);
   const [resultSize, setResultSize] = useState(4);
+  // console.log(data.length);
   const handleLevel = (e) => {
     console.log(e.target.value);
+    setLevel(e.target.value);
   };
   const handleShow = () => {
-      setResultSize(prevState => prevState + 2);
+      setResultSize(prevState => prevState + 4);
       setLoading(true)
       setShowMore(true);
       setTimeout(() => {
@@ -36,21 +37,21 @@ function Project() {
         </select>
       </div>
       <div className="project--wrapper">
-        {data.slice(0, 4).map((item, index) => {
+        {fetch ? <Spinner /> : (filterProjects.slice(0, 4).map((item, index) => {
           return (
             <ProjectCard data={item} key={index} />
           )
-        })}
+        }))}
         {showMore ?
-          (loading ? <Spinner /> : data.slice(4, resultSize).map((item, index) => {
+          (loading ? <Spinner /> : filterProjects.slice(4, resultSize).map((item, index) => {
             return (
               <ProjectCard data={item} key={index} />
             )
           })) :
           ""
         }
-        <button className="load--btn" onClick={handleShow}>Load More</button>
       </div>
+        <button className="load--btn" onClick={handleShow}>Load More</button>
     </section>
   );
 }

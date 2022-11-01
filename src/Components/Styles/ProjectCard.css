@@ -20,6 +20,36 @@
 .project--card.news--homepage {
   background-image: linear-gradient(90deg, #f5b09f, #b4a9f5);
 }
+.project--card.crowdfunding {
+  background-image: linear-gradient(90deg, #9ff5ee, #a9d3f5);
+}
+.project--card.notification {
+  background-image: linear-gradient(90deg, #c09ff5, #f5a9af);
+}
+.project--card.four--card--feature {
+  background-image: linear-gradient(90deg, #f59fb5, #a9c4f5);
+}
+.project--card.clipboard {
+  background-image: linear-gradient(90deg, #9ff5ea, #aea9f5);
+}
+.project--card.social--dashboard {
+  background-image: linear-gradient(90deg, #f5ac9f, #aea9f5);
+}
+.project--card.snap--intro {
+  background-image: linear-gradient(90deg, #e5f59f, #a9e6f5);
+}
+.project--card.insure--landing {
+  background-image: linear-gradient(90deg, #f5b39f, #aaa9f5);
+}
+.project--card.rating--card {
+  background-image: linear-gradient(90deg, #f5d79f, #f5bba9);
+}
+.project--card.fylo {
+  background-image: linear-gradient(90deg, #9facf5, #b7a9f5);
+}
+.project--card.qr--code {
+  background-image: linear-gradient(90deg, #8a9af1, #b7a9f5);
+}
 
 
 /* Project Image */
@@ -43,4 +73,34 @@
 }
 .project--card.news--homepage> .project--img {
   background: linear-gradient(90deg, #faee4e 0%, #f55a5a 54%, #4649f0 100%);
+}
+.project--card.crowdfunding > .project--img {
+  background: linear-gradient(90deg, #4efac6 0%, #5af58e 54%, #46c8f0 100%);
+}
+.project--card.notification > .project--img {
+  background: linear-gradient(90deg, #6d4efa 0%, #af5af5 54%, #f046e7 100%);
+}
+.project--card.four--card--feature > .project--img {
+  background: linear-gradient(90deg, #fa7f4e 0%, #5a7ef5 54%, #f0464f 100%);
+}
+.project--card.clipboard > .project--img {
+  background: linear-gradient(90deg, #4efab8 0%, #5a7ef5 54%, #9546f0 100%);
+}
+.project--card.social--dashboard > .project--img {
+  background: linear-gradient(90deg, #4eadfa 0%, #f5b25a 54%, #f0468d 100%);
+}
+.project--card.snap--intro > .project--img {
+  background: linear-gradient(90deg, #514efa 0%, #f5de5a 54%, #46c8f0 100%);
+}
+.project--card.insure--landing > .project--img {
+  background: linear-gradient(90deg, #463564 0%, #f5985a 54%, #f07646 100%);
+}
+.project--card.rating--card > .project--img {
+  background: linear-gradient(90deg, #bfbec0 0%, #f5985a 54%, #f0c846 100%);
+}
+.project--card.fylo > .project--img {
+  background: linear-gradient(90deg, #16287a 0%, #221086 54%, #f0465d 100%);
+}
+.project--card.qr--code > .project--img {
+  background: linear-gradient(90deg, #65a2f3 0%, #70e7f0 54%, #5686f0 100%);
 }

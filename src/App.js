@@ -5,11 +5,15 @@ import FirstSection from "./Components/FirstSection";
 import AboutSection from "./Components/AboutSection";
 import Project from "./Components/Project";
 import ScrollTopButton from "./Components/ScrollTopButton";
+import data from './Components/ProjectCardData';
 
 function App() {
   const [theme, setTheme] = useState(
     JSON.parse(localStorage.getItem("theme")) || false
   );
+  const [filterProjects, setFilterProjects] = useState([]);
+  const [level, setLevel] = useState("all");
+  const [fetch, setFetch] = useState(false);
 
   useEffect(() => {
     localStorage.setItem("theme", JSON.stringify(theme));
@@ -23,6 +27,10 @@ function App() {
     }
   });
 
+  useEffect(() => {
+    handleLevel();
+  }, [level])
+
   const changeTheme = () => {
     if (theme) {
       document.body.classList.add("light");
@@ -31,13 +39,46 @@ function App() {
     }
   };
 
+  const handleLevel = () => {
+    switch (level) {
+      case 'newbie':
+        setFetch(true)
+        setFilterProjects(data.filter(item => item.level === "newbie"))
+        setTimeout(() => {
+          setFetch(false)
+        }, 1000)
+        break;
+      case 'junior':
+        setFetch(true)
+        setFilterProjects(data.filter(item => item.level === "junior"))
+        setTimeout(() => {
+          setFetch(false)
+        }, 1000)
+        break;
+      case 'intermediate':
+        setFetch(true)
+        setFilterProjects(data.filter(item => item.level === "intermediate"))
+        setTimeout(() => {
+          setFetch(false)
+        }, 1000)
+        break;
+      default:
+        setFetch(true)
+        setFilterProjects(data);
+        setTimeout(() => {
+          setFetch(false)
+        }, 1000)
+        break;
+    }
+  }
+
   return (
     <div className="App">
       <Header theme={theme} setTheme={setTheme} />
       <main>
         <FirstSection />
         <AboutSection />
-        <Project />
+        <Project data={data} setLevel={setLevel} filterProjects={filterProjects} fetch={fetch} />
         <ScrollTopButton />
       </main>
     </div>

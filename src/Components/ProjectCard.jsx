@@ -4,7 +4,7 @@ function ProjectCard({data}) {
   return (
     <div className={`project--card ${data.color}`}>
       <div className="project--img">
-        <img src={data.images} alt={data.color} />
+        <img src={data.images} alt={data.color} aria-hidden="true" />
       </div>
       <h3 className="project--title">
         {data.title}
