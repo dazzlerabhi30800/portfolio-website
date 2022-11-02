@@ -58,7 +58,7 @@ function Project({ data, setLevel, filterProjects, fetch }) {
           ""
         }
       </div>
-      <button className="load--btn" onClick={handleShow}>Load More</button>
+      <button disabled={resultSize === filterProjects.length} className="load--btn" onClick={handleShow}>Load More</button>
     </section>
   );
 }
