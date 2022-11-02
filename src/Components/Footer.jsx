@@ -19,7 +19,7 @@ function Footer() {
                 <a href="#contact">Contact</a>
             </div>
             <div className="copyright">
-                &#169; Copyright Abhishek Choudhary
+                &#169; 2022 Copyright Abhishek Choudhary
             </div>
         </footer>
     )

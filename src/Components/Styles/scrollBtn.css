@@ -1,6 +1,6 @@
 .scroll--btn {
-  background: linear-gradient(180deg, #fa71ef, #e67c7c);
-  box-shadow: 1px 1px 10px 5px #eb74b011;
+  background: linear-gradient(180deg, #ee2ede, #f14e4e);
+  box-shadow: 1px 1px 10px 5px #f3429b41;
   color: white;
   width: fit-content;
   position: fixed;
@@ -23,6 +23,6 @@
     cursor: pointer;
   }
   .scroll--btn:hover {
-    box-shadow: 1px 1px 10px 5px #eb74b071;
+    box-shadow: 1px 1px 10px 5px #e936908c;
   }
 }
