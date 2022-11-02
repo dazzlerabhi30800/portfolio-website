@@ -32,7 +32,7 @@ const Header = ({ theme, setTheme }) => {
   }, [click]);
 
   return (
-    <header>
+    <header id="home">
       <svg
         width="80"
         height="80"
@@ -180,7 +180,7 @@ const Header = ({ theme, setTheme }) => {
       <nav className={click ? "active" : ""}>
         <ul>
           <li>
-            <a href="/">Home</a>
+            <a href="#home">Home</a>
           </li>
           <li>
             <a href="#about">About</a>
@@ -189,7 +189,7 @@ const Header = ({ theme, setTheme }) => {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="/">Contact</a>
+            <a href="#contact">Contact</a>
           </li>
         </ul>
       </nav>

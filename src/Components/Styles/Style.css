@@ -5,6 +5,7 @@
 @import "./ProjectCard.css";
 @import "./scrollBtn.css";
 @import "./Spinner.css";
+@import "./FooterSection.css";
 
 body {
   /* background: radial-gradient(circle, #dbdbd9, #b4b4b3); */
@@ -40,6 +41,7 @@ html {
   padding: 0;
   box-sizing: border-box;
   transition: all 1s linear;
+  scroll-behavior: smooth;
 }
 
 header {

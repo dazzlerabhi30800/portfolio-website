@@ -2,23 +2,30 @@ import React, { useState } from "react";
 import ProjectCard from './ProjectCard';
 import Spinner from './Spinner';
 
-function Project({data, setLevel, filterProjects, fetch}) {
+function Project({ data, setLevel, filterProjects, fetch }) {
   const [showMore, setShowMore] = useState(false);
   const [loading, setLoading] = useState(false);
   const [resultSize, setResultSize] = useState(4);
-  // console.log(data.length);
+  console.log(filterProjects.length);
   const handleLevel = (e) => {
     console.log(e.target.value);
     setLevel(e.target.value);
   };
   const handleShow = () => {
-      setResultSize(prevState => prevState + 4);
-      setLoading(true)
-      setShowMore(true);
-      setTimeout(() => {
-        setLoading(false);
-      }, 1000)
-  } 
+    if (resultSize >= filterProjects.length) {
+      const length = filterProjects.length
+      setResultSize(18);
+    }
+    else {
+      setResultSize(resultSize + 4);
+    }
+    console.log({ resultSize })
+    setLoading(true)
+    setShowMore(true);
+    setTimeout(() => {
+      setLoading(false);
+    }, 1000)
+  }
   return (
     <section className="project--section" id="projects">
       <div className="title">
@@ -51,7 +58,7 @@ function Project({data, setLevel, filterProjects, fetch}) {
           ""
         }
       </div>
-        <button className="load--btn" onClick={handleShow}>Load More</button>
+      <button className="load--btn" onClick={handleShow}>Load More</button>
     </section>
   );
 }

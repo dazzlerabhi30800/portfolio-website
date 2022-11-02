@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Pontano+Sans&display=swap');
+
+:root {
+  --font-Kalam: "Kalam", sans-serif;
+  --font-Pontono: "Pontono Sans", sans-serif;
+}
+
+
+footer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #a3a3a3, #f384c5, #6aa1f3, #b77af5);
+  scroll-behavior: smooth;
+}
+
+.social--wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.social--wrapper > a {
+    font-size: 1.8rem;
+    transform: scale(1);
+    transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.social--wrapper a:hover {
+    transform: scale(1.25);
+}
+
+.social--wrapper > a:nth-child(1) {
+  color: purple;
+}
+.social--wrapper > a:nth-child(2) {
+  background: linear-gradient(to bottom, #390efa, #e90a93);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.footer__link--wrapper {
+    display: flex;
+    gap: 1.5rem;
+}
+.footer__link--wrapper > a {
+    text-decoration: none;
+    font-family: var(--font-Kalam);
+    position: relative;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.footer__link--wrapper > a::after {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1.6px;
+    bottom: -5px;
+    background: #524a9b;
+    left: 0;
+    transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.footer__link--wrapper > a:hover::after {
+    width: 100%;
+}
+.copyright {
+    font-family: var(--font-Pontono);
+    letter-spacing: 1px;
+}

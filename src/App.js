@@ -6,6 +6,7 @@ import AboutSection from "./Components/AboutSection";
 import Project from "./Components/Project";
 import ScrollTopButton from "./Components/ScrollTopButton";
 import data from './Components/ProjectCardData';
+import Footer from "./Components/Footer";
 
 function App() {
   const [theme, setTheme] = useState(
@@ -81,6 +82,7 @@ function App() {
         <Project data={data} setLevel={setLevel} filterProjects={filterProjects} fetch={fetch} />
         <ScrollTopButton />
       </main>
+      <Footer />
     </div>
   );
 }
