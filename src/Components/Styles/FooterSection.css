@@ -51,6 +51,7 @@ footer {
     font-family: var(--font-Kalam);
     position: relative;
     transition: all .3s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+    color: #524a9b; 
 }
 .footer__link--wrapper > a::after {
     position: absolute;
