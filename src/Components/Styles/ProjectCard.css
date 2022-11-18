@@ -71,6 +71,14 @@
   background-image: linear-gradient(90deg, #8a9af1, #93a5f8);
 }
 
+.project--card.interactive--pricing {
+  background-image: linear-gradient(90deg, #8ae2f1, #93f8e2);
+}
+
+.project--card.space--tourism {
+  background-image: linear-gradient(90deg, #8aaef1, #a780f0);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -143,4 +151,12 @@
 
 .project--card.interactive--comments>.project--img {
   background: linear-gradient(90deg, #71a6ec 0%, #707df0 54%, #2865e7 100%);
+}
+
+.project--card.interactive--pricing>.project--img {
+  background: linear-gradient(90deg, #71ecec 0%, #70f0b4 54%, #7ba3aa 100%);
+}
+
+.project--card.space--tourism>.project--img {
+  background: linear-gradient(90deg, #446ae9 0%, #5d4dec 54%, #3648ee 100%);
 }

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import ProjectCard from './ProjectCard';
-import Spinner from './Spinner';
+import ProjectCard from "./ProjectCard";
+import Spinner from "./Spinner";
 
 function Project({ data, setLevel, filterProjects, fetch }) {
   const [showMore, setShowMore] = useState(false);
@@ -13,19 +13,18 @@ function Project({ data, setLevel, filterProjects, fetch }) {
   };
   const handleShow = () => {
     if (resultSize >= filterProjects.length) {
-      const length = filterProjects.length
-      setResultSize(18);
-    }
-    else {
+      const length = filterProjects.length;
+      setResultSize(length);
+    } else {
       setResultSize(resultSize + 4);
     }
-    console.log({ resultSize })
-    setLoading(true)
+    console.log({ resultSize });
+    setLoading(true);
     setShowMore(true);
     setTimeout(() => {
       setLoading(false);
-    }, 1000)
-  }
+    }, 1000);
+  };
   return (
     <section className="project--section" id="projects">
       <div className="title">
@@ -44,21 +43,32 @@ function Project({ data, setLevel, filterProjects, fetch }) {
         </select>
       </div>
       <div className="project--wrapper">
-        {fetch ? <Spinner /> : (filterProjects.slice(0, 4).map((item, index) => {
-          return (
-            <ProjectCard data={item} key={index} />
+        {fetch ? (
+          <Spinner />
+        ) : (
+          filterProjects.slice(0, 4).map((item, index) => {
+            return <ProjectCard data={item} key={index} />;
+          })
+        )}
+        {showMore ? (
+          loading ? (
+            <Spinner />
+          ) : (
+            filterProjects.slice(4, resultSize).map((item, index) => {
+              return <ProjectCard data={item} key={index} />;
+            })
           )
-        }))}
-        {showMore ?
-          (loading ? <Spinner /> : filterProjects.slice(4, resultSize).map((item, index) => {
-            return (
-              <ProjectCard data={item} key={index} />
-            )
-          })) :
+        ) : (
           ""
-        }
+        )}
       </div>
-      <button disabled={resultSize === filterProjects.length} className="load--btn" onClick={handleShow}>Load More</button>
+      <button
+        disabled={resultSize === filterProjects.length}
+        className="load--btn"
+        onClick={handleShow}
+      >
+        Load More
+      </button>
     </section>
   );
 }

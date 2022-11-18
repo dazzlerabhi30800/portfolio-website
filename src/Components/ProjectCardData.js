@@ -175,4 +175,23 @@ export default [
     color: "interactive--comments",
     level: "intermediate",
   },
+  {
+    images: "./images/interactive-pricing-component.png",
+    title: "Interactive Pricing Component HTML, CSS & JS",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/frontendMentor-interactive-pricing-component-retake",
+    liveUrl:
+      "https://frontend-mentor-interactive-pricing-component-retake.vercel.app/",
+    color: "interactive--pricing",
+    level: "junior",
+  },
+  {
+    images: "./images/space-tourism.png",
+    title: "Space Tourism Website Using HTML, CSS & JS",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/frontEnd-spaceTourismWebsite",
+    liveUrl: "https://front-end-space-tourism-website.vercel.app/",
+    color: "space--tourism",
+    level: "intermediate",
+  },
 ];
