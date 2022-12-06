@@ -5,7 +5,7 @@ import FirstSection from "./Components/FirstSection";
 import AboutSection from "./Components/AboutSection";
 import Project from "./Components/Project";
 import ScrollTopButton from "./Components/ScrollTopButton";
-import data from './Components/ProjectCardData';
+import data from "./Components/ProjectCardData";
 import Footer from "./Components/Footer";
 
 function App() {
@@ -30,7 +30,7 @@ function App() {
 
   useEffect(() => {
     handleLevel();
-  }, [level])
+  }, [level]);
 
   const changeTheme = () => {
     if (theme) {
@@ -42,36 +42,36 @@ function App() {
 
   const handleLevel = () => {
     switch (level) {
-      case 'newbie':
-        setFetch(true)
-        setFilterProjects(data.filter(item => item.level === "newbie"))
+      case "newbie":
+        setFetch(true);
+        setFilterProjects(data.filter((item) => item.level === "newbie"));
         setTimeout(() => {
-          setFetch(false)
-        }, 1000)
+          setFetch(false);
+        }, 1000);
         break;
-      case 'junior':
-        setFetch(true)
-        setFilterProjects(data.filter(item => item.level === "junior"))
+      case "junior":
+        setFetch(true);
+        setFilterProjects(data.filter((item) => item.level === "junior"));
         setTimeout(() => {
-          setFetch(false)
-        }, 1000)
+          setFetch(false);
+        }, 1000);
         break;
-      case 'intermediate':
-        setFetch(true)
-        setFilterProjects(data.filter(item => item.level === "intermediate"))
+      case "intermediate":
+        setFetch(true);
+        setFilterProjects(data.filter((item) => item.level === "intermediate"));
         setTimeout(() => {
-          setFetch(false)
-        }, 1000)
+          setFetch(false);
+        }, 1000);
         break;
       default:
-        setFetch(true)
+        setFetch(true);
         setFilterProjects(data);
         setTimeout(() => {
-          setFetch(false)
-        }, 1000)
+          setFetch(false);
+        }, 1000);
         break;
     }
-  }
+  };
 
   return (
     <div className="App">
@@ -79,7 +79,12 @@ function App() {
       <main>
         <FirstSection />
         <AboutSection />
-        <Project data={data} setLevel={setLevel} filterProjects={filterProjects} fetch={fetch} />
+        <Project
+          data={data}
+          setLevel={setLevel}
+          filterProjects={filterProjects}
+          fetch={fetch}
+        />
         <ScrollTopButton />
       </main>
       <Footer />

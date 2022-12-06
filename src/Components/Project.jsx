@@ -5,8 +5,10 @@ import Spinner from "./Spinner";
 function Project({ data, setLevel, filterProjects, fetch }) {
   const [showMore, setShowMore] = useState(false);
   const [loading, setLoading] = useState(false);
+  const [endSize, setEndSize] = useState(4);
+  const [startSize, setStartSize] = useState(4);
   const [resultSize, setResultSize] = useState(4);
-  console.log(filterProjects.length);
+  // console.log(filterProjects.length);
   const handleLevel = (e) => {
     console.log(e.target.value);
     setLevel(e.target.value);
@@ -15,8 +17,12 @@ function Project({ data, setLevel, filterProjects, fetch }) {
     if (resultSize >= filterProjects.length) {
       const length = filterProjects.length;
       setResultSize(length);
+      setEndSize(length);
+      setStartSize(length);
     } else {
       setResultSize(resultSize + 4);
+      setEndSize(endSize + 4);
+      setStartSize(startSize + 4);
     }
     console.log({ resultSize });
     setLoading(true);
@@ -46,7 +52,7 @@ function Project({ data, setLevel, filterProjects, fetch }) {
         {fetch ? (
           <Spinner />
         ) : (
-          filterProjects.slice(0, 4).map((item, index) => {
+          filterProjects.slice(0, endSize).map((item, index) => {
             return <ProjectCard data={item} key={index} />;
           })
         )}
@@ -54,7 +60,7 @@ function Project({ data, setLevel, filterProjects, fetch }) {
           loading ? (
             <Spinner />
           ) : (
-            filterProjects.slice(4, resultSize).map((item, index) => {
+            filterProjects.slice(startSize, resultSize).map((item, index) => {
               return <ProjectCard data={item} key={index} />;
             })
           )
