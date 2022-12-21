@@ -79,6 +79,10 @@
   background-image: linear-gradient(90deg, #8aaef1, #a780f0);
 }
 
+.project--card.multi--step--form {
+  background-image: linear-gradient(90deg, #6a68f0, #f080af);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -159,4 +163,8 @@
 
 .project--card.space--tourism>.project--img {
   background: linear-gradient(90deg, #446ae9 0%, #5d4dec 54%, #3648ee 100%);
+}
+
+.project--card.multi--step--form>.project--img {
+  background: linear-gradient(90deg, #6d5ef3 0%, #f86086 54%, #a436ee 100%);
 }

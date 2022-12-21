@@ -194,4 +194,13 @@ export default [
     color: "space--tourism",
     level: "intermediate",
   },
+  {
+    images: "./images/multi-step-form.png",
+    title: "Multi Step Form in React",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/frontEndMentor-multi-step-form-main",
+    liveUrl: "https://front-end-mentor-multi-step-form-main.vercel.app/",
+    color: "multi--step--form",
+    level: "intermediate",
+  },
 ];
