@@ -83,6 +83,10 @@
   background-image: linear-gradient(90deg, #6a68f0, #f080af);
 }
 
+.project--card.sunny--side--agency {
+  background-image: linear-gradient(90deg, #f0c068, #80e8f0);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -167,4 +171,8 @@
 
 .project--card.multi--step--form>.project--img {
   background: linear-gradient(90deg, #6d5ef3 0%, #f86086 54%, #a436ee 100%);
+}
+
+.project--card.sunny--side--agency>.project--img {
+  background: linear-gradient(90deg, #36d3fa 0%, #60f8f1 54%, #36b4ee 100%);
 }

@@ -203,4 +203,14 @@ export default [
     color: "multi--step--form",
     level: "intermediate",
   },
+  {
+    images: "./images/sunny-side.png",
+    title: "SunnySide Agency Landing Page in React using tailwind-css",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/frontEndMentor-sunnyside-agency-landing-page",
+    liveUrl:
+      "https://front-end-mentor-sunnyside-agency-landing-page-roan.vercel.app/",
+    color: "sunny--side--agency",
+    level: "junior",
+  },
 ];
