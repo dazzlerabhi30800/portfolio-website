@@ -87,6 +87,10 @@
   background-image: linear-gradient(90deg, #f0c068, #80e8f0);
 }
 
+.project--card.spotify--clone {
+  background-image: linear-gradient(90deg, #62f0c5, #88eea7);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -175,4 +179,8 @@
 
 .project--card.sunny--side--agency>.project--img {
   background: linear-gradient(90deg, #36d3fa 0%, #60f8f1 54%, #36b4ee 100%);
+}
+
+.project--card.spotify--clone>.project--img {
+  background: linear-gradient(90deg, #5df189 0%, #c6ee69 54%, #1efadd 100%);
 }

@@ -213,4 +213,12 @@ export default [
     color: "sunny--side--agency",
     level: "junior",
   },
+  {
+    images: "./images/spotify-clone.jpg",
+    title: "Spotify clone in Vanilla JS",
+    githubUrl: "https://github.com/dazzlerabhi30800/spotifyClone-in-vanilla-js",
+    liveUrl: "https://spotify-clone-in-vanilla-js-2.vercel.app/",
+    color: "spotify--clone",
+    level: "intermediate",
+  },
 ];
