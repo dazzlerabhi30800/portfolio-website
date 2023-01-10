@@ -4,8 +4,8 @@ function Logo() {
   return (
     <div className="logo">
       <svg
-        width="80"
-        height="80"
+        width="70"
+        height="70"
         viewBox="0 0 133 142"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

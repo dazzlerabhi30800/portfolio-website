@@ -8,7 +8,7 @@ function Project({ data, setLevel, filterProjects, fetch }) {
   const [endSize, setEndSize] = useState(4);
   const [startSize, setStartSize] = useState(4);
   const [resultSize, setResultSize] = useState(4);
-  console.log(filterProjects.length);
+  // console.log(filterProjects.length);
   const handleLevel = (e) => {
     console.log(e.target.value);
     setLevel(e.target.value);

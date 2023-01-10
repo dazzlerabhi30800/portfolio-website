@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./App.css";
 import Header from "./Components/Header";
 import FirstSection from "./Components/FirstSection";
@@ -7,8 +7,10 @@ import Project from "./Components/Project";
 import ScrollTopButton from "./Components/ScrollTopButton";
 import data from "./Components/ProjectCardData";
 import Footer from "./Components/Footer";
+import Skills from "./Components/Skills";
 
 function App() {
+  const skillsContainer = useRef();
   const [theme, setTheme] = useState(
     JSON.parse(localStorage.getItem("theme")) || false
   );
@@ -79,6 +81,7 @@ function App() {
       <main>
         <FirstSection />
         <AboutSection />
+        <Skills skillsContainer={skillsContainer} />
         <Project
           data={data}
           setLevel={setLevel}

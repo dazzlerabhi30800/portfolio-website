@@ -6,20 +6,19 @@
 @import "./scrollBtn.css";
 @import "./Spinner.css";
 @import "./FooterSection.css";
+@import './Skills.css';
 
 body {
-  /* background: radial-gradient(circle, #dbdbd9, #b4b4b3); */
-  background: linear-gradient(
-    270deg,
-    rgba(30, 30, 31, 1) 0%,
-    rgba(27, 26, 26, 1) 100%,
-    rgba(17, 8, 8, 1) 100%
-  );
+  background: linear-gradient(270deg,
+      rgba(30, 30, 31, 1) 0%,
+      rgba(27, 26, 26, 1) 100%,
+      rgba(17, 8, 8, 1) 100%);
   width: 100%;
   position: relative;
   overflow-x: hidden;
   transition: all 1s linear;
 }
+
 body.light {
   background: linear-gradient(to left, #ccc, #ccc);
 }
@@ -49,9 +48,15 @@ header {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
-  align-items: center;
-  /* justify-content: space-between; */
   padding: 5px 1rem;
+}
+
+
+
+.logo svg {
+  margin-left: 10px;
+  margin-top: 6px;
+  margin-bottom: 6px;
 }
 
 nav {
@@ -63,7 +68,9 @@ nav {
   opacity: 0;
   transition: all 0.7s ease-in-out;
   transform: translateY(-400px);
+  margin-top: 1rem;
 }
+
 nav.active {
   overflow: visible;
   height: 220px;
@@ -71,14 +78,14 @@ nav.active {
   transform: translateY(0px);
 }
 
-nav > ul {
+nav>ul {
   display: flex;
   flex-direction: column;
   list-style: none;
   gap: 2rem;
 }
 
-nav > ul > li > a {
+nav>ul>li>a {
   text-decoration: none;
   font-weight: 600;
   color: white;
@@ -89,11 +96,12 @@ nav > ul > li > a {
   letter-spacing: 1px;
   font-family: var(--font-Major-Mono-Display);
 }
-body.light header > nav > ul > li > a {
+
+body.light header>nav>ul>li>a {
   color: #000;
 }
 
-nav > ul > li > a::after {
+nav>ul>li>a::after {
   content: "";
   position: absolute;
   width: 0%;
@@ -104,11 +112,12 @@ nav > ul > li > a::after {
   border-radius: 30px;
   transition: all 0.3s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
-body.light nav > ul > li > a::after {
+
+body.light nav>ul>li>a::after {
   background: #000;
 }
 
-nav > ul > li > a:hover::after {
+nav>ul>li>a:hover::after {
   width: 100%;
 }
 
@@ -116,12 +125,13 @@ nav > ul > li > a:hover::after {
   place-self: center;
 }
 
-header > .theme--toggler > i {
+header>.theme--toggler>i {
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
 }
-body.light header > .theme--toggler > i {
+
+body.light header>.theme--toggler>i {
   color: #000;
 }
 
@@ -131,27 +141,32 @@ body.light header > .theme--toggler > i {
   transition: all 0.3s linear;
   place-self: center end;
 }
+
 body.light .menu--btn {
   color: #000;
 }
 
 @media (hover: hover) {
-  header > svg {
+  header>svg {
     cursor: pointer;
   }
 
-  nav > ul > li > a {
+  nav>ul>li>a {
     cursor: pointer;
   }
-  .languages--wrapper > span {
+
+  .languages--wrapper>span {
     cursor: pointer;
   }
-  .links--wrapper > a {
+
+  .links--wrapper>a {
     cursor: pointer;
   }
+
   .theme--toggler {
     cursor: pointer;
   }
+
   .menu--btn {
     cursor: pointer;
   }
@@ -161,9 +176,11 @@ body.light .menu--btn {
   .menu--btn {
     display: none;
   }
+
   .theme--toggler {
     place-self: center end;
   }
+
   nav {
     grid-row-start: 1;
     height: auto;
@@ -173,7 +190,8 @@ body.light .menu--btn {
     transform: translateY(0px);
     place-self: center;
   }
-  nav > ul {
+
+  nav>ul {
     flex-direction: row;
   }
 }
