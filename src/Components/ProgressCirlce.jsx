@@ -2,8 +2,6 @@ import React from "react";
 
 const ProgressCircle = ({ skillsContainer }) => {
   window.addEventListener("scroll", () => {
-    // const imageReveal = window.scrollY - skillsContainer.current.offsetHeight;
-    // console.log(skillsContainer.current.clientHeight);
     const slideAt =
       window.scrollY +
       window.innerHeight -
@@ -17,87 +15,56 @@ const ProgressCircle = ({ skillsContainer }) => {
       skillsContainer.current.classList.add("show");
     } else {
       skillsContainer.current.classList.remove("show");
+      skillsContainer.current.classList.remove("shuffle");
     }
   });
+
+  const handleShuffle = () => {
+    if (
+      skillsContainer.current.classList.contains("show") &&
+      window.innerWidth >= 950
+    ) {
+      skillsContainer.current.classList.add("shuffle");
+    } else {
+      skillsContainer.current.classList.remove("shuffle");
+    }
+  };
+
+  window.addEventListener("resize", handleShuffle);
+
   return (
     <div className="skills--container" ref={skillsContainer}>
-      <div className="skills">
-        <div className="outer">
-          <div className="inner">
-            <div id="number">
-              <span className="lang">HTML</span>
-              <span className="percent">90%</span>
-            </div>
-          </div>
+      <div className="skills" onClick={handleShuffle}>
+        <div className="lang" id="html">
+          HTML
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stopColor="#e91e63" />
-              <stop offset="100%" stopColor="#673ab7" />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" id="html" strokeLinecap="round" />
-        </svg>
+        <div className="percent">
+          <div data-percent="85%" className="percent--line"></div>
+        </div>
       </div>
       <div className="skills">
-        <div className="outer">
-          <div className="inner">
-            <div id="number">
-              <span className="lang">CSS</span>
-              <span className="percent">85%</span>
-            </div>
-          </div>
+        <div className="lang" id="css">
+          CSS
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stopColor="#e91e63" />
-              <stop offset="100%" stopColor="#673ab7" />
-            </linearGradient>
-          </defs>
-          <circle cx="80" cy="80" r="70" id="css" strokeLinecap="round" />
-        </svg>
+        <div className="percent">
+          <div data-percent="90%" className="percent--line"></div>
+        </div>
       </div>
       <div className="skills">
-        <div className="outer">
-          <div className="inner">
-            <div id="number">
-              <span className="lang">JS</span>
-              <span className="percent">80%</span>
-            </div>
-          </div>
+        <div className="lang" id="javascript">
+          JAVASCRIPT
         </div>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          version="1.1"
-          width="160px"
-          height="160px"
-        >
-          <defs>
-            <linearGradient id="GradientColor">
-              <stop offset="0%" stopColor="#e91e63" />
-              <stop offset="100%" stopColor="#673ab7" />
-            </linearGradient>
-          </defs>
-          <circle
-            cx="80"
-            cy="80"
-            r="70"
-            id="javascript"
-            strokeLinecap="round"
-          />
-        </svg>
+        <div className="percent">
+          <div data-percent="80%" className="percent--line"></div>
+        </div>
+      </div>
+      <div className="skills">
+        <div className="lang" id="react">
+          REACT
+        </div>
+        <div className="percent">
+          <div data-percent="80%" className="percent--line"></div>
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,6 @@ import React from "react";
 import { Slide } from "react-awesome-reveal";
 import { keyframes } from "@emotion/react";
 
-
 function AboutSection() {
   const customAnimation = keyframes`
         from {
@@ -14,8 +13,7 @@ function AboutSection() {
             transform: translate3d(0,0,0);
         }
     `;
-   
-    
+
   return (
     <section className="about--section" id="about">
       <Slide>
@@ -30,10 +28,10 @@ function AboutSection() {
           </div>
           <p>
             "I am a Front Developer based in India. Been started Learning Front
-            Development a few months ago chose this as a career option. I Love
-            writing FrontEnd Code and love to make and trying new things. I have
-            made over 150+ projects in timespan of my learning. An Engineering
-            Student aspire to get a desk job."
+            Development a few months ago and chose this as a career option. I
+            Love writing FrontEnd Code and love to make and trying new things. I
+            have made over 150+ projects in timespan of my learning. I am An
+            Engineering Student aspire to get a desk job."
           </p>
         </div>
       </Slide>
