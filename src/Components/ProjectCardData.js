@@ -221,4 +221,13 @@ export default [
     color: "spotify--clone",
     level: "intermediate",
   },
+  {
+    images: "./images/netflix-clone.png",
+    title: "Netflix Clone using React+Vite",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/netflix-clone-in-react-vite",
+    liveUrl: "https://netflix-clone-in-react-vite.vercel.app/",
+    color: "netflix--clone",
+    level: "intermediate",
+  },
 ];

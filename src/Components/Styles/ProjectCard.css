@@ -91,6 +91,10 @@
   background-image: linear-gradient(90deg, #62f0c5, #88eea7);
 }
 
+.project--card.netflix--clone {
+  background-image: linear-gradient(90deg, #f1449b, #f0667d);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -183,4 +187,8 @@
 
 .project--card.spotify--clone>.project--img {
   background: linear-gradient(90deg, #5df189 0%, #c6ee69 54%, #1efadd 100%);
+}
+
+.project--card.netflix--clone>.project--img {
+  background: linear-gradient(90deg, #ee2bd4 0%, #f02170 54%, #f31f1f 100%);
 }
