@@ -95,6 +95,10 @@
   background-image: linear-gradient(90deg, #f1449b, #f0667d);
 }
 
+.project--card.clothing--store {
+  background-image: linear-gradient(90deg, #bf72f3, #6344f0);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -191,4 +195,8 @@
 
 .project--card.netflix--clone>.project--img {
   background: linear-gradient(90deg, #ee2bd4 0%, #f02170 54%, #f31f1f 100%);
+}
+
+.project--card.clothing--store>.project--img {
+  background: linear-gradient(90deg, #eeba4b 0%, #9f48f0 54%, #f5c254 100%);
 }

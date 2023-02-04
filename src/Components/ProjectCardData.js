@@ -230,4 +230,12 @@ export default [
     color: "netflix--clone",
     level: "intermediate",
   },
+  {
+    images: "./images/clothing-store.png",
+    title: "Clothing Store in Vanilla JS using GSAP",
+    githubUrl: "https://github.com/dazzlerabhi30800/clothing-store-with-gsap",
+    liveUrl: "https://clothing-store-with-gsap.vercel.app/",
+    color: "clothing--store",
+    level: "intermediate",
+  },
 ];
