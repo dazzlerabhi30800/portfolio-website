@@ -8,6 +8,7 @@
 }
 .skills--wrapper > .title {
   width: 30ch;
+  font-size: 1.5rem;
 }
 .skills--wrapper > .title > h1 {
   letter-spacing: 3px;
@@ -36,6 +37,9 @@
 @media Screen and (min-width: 500px) {
   .skills--wrapper {
     padding: 5rem 1rem;
+  }
+  .skills--wrapper > .title {
+    font-size: 1.8rem;
   }
   .skills--container {
     grid-template-columns: repeat(2, 1fr);
