@@ -2,7 +2,7 @@ import React from "react";
 
 const Skills = ({ skillsContainer }) => {
   const logoImg = [
-    "./logo/nodejs.png",
+    "./logo/nodeJS.png",
     "./logo/css.png",
     "./logo/sass.png",
     "./logo/bootstrap.png",
