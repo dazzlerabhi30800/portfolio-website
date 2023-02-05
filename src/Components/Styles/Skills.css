@@ -78,30 +78,30 @@
     place-items: center;
     margin-top: 3rem;
   }
-  .skills--container > img:nth-child(5) {
+  .skills--container.show > img:nth-child(5) {
     grid-column-start: 2;
     place-self: start;
     transform: translateX(var(--slide-distance));
   }
-  .skills--container > img:nth-child(6) {
+  .skills--container.show > img:nth-child(6) {
     place-self: start;
     transform: translateX(var(--slide-distance));
   }
-  .skills--container > img:nth-child(7) {
+  .skills--container.show > img:nth-child(7) {
     place-self: start;
 
     transform: translateX(var(--slide-distance));
   }
-  .skills--container > img:nth-child(8) {
+  .skills--container.show > img:nth-child(8) {
     grid-column-start: 2;
     place-self: start;
     transform: translate(40px);
   }
-  .skills--container > img:nth-child(9) {
+  .skills--container.show > img:nth-child(9) {
     place-self: start;
     transform: translate(40px);
   }
-  .skills--container > img:last-child {
+  .skills--container.show > img:last-child {
     grid-column-start: 2;
     place-self: end;
     transform: translate(90px);
