@@ -78,8 +78,10 @@
     place-items: center;
     margin-top: 3rem;
   }
-  .skills--container.show > img:nth-child(5) {
+  .skills--container > img:nth-child(5) {
     grid-column-start: 2;
+  }
+  .skills--container.show > img:nth-child(5) {
     place-self: start;
     transform: translateX(var(--slide-distance));
   }
@@ -92,8 +94,10 @@
 
     transform: translateX(var(--slide-distance));
   }
-  .skills--container.show > img:nth-child(8) {
+  .skills--container > img:nth-child(8) {
     grid-column-start: 2;
+  }
+  .skills--container.show > img:nth-child(8) {
     place-self: start;
     transform: translate(40px);
   }

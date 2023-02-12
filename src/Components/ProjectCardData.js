@@ -238,4 +238,13 @@ export default [
     color: "clothing--store",
     level: "intermediate",
   },
+  {
+    images: "./images/rest-countries-api.png",
+    title: "Rest Countries Api With Theme Switcher in ReactJs",
+    githubUrl:
+      "https://github.com/dazzlerabhi30800/frontEnd-Mentor-Rest-countries-api",
+    liveUrl: "https://front-end-mentor-rest-countries-api.vercel.app/",
+    color: "rest--countries",
+    level: "advance",
+  },
 ];
