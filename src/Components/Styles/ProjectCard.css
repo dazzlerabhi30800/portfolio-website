@@ -103,6 +103,10 @@
   background-image: linear-gradient(90deg, #9e73ee, #7495f0);
 }
 
+.project--card.bolt--store {
+  background-image: linear-gradient(90deg, #8b8b8b, #a5a7ad);
+}
+
 
 /* Project Image */
 .project--card.todo>.project--img {
@@ -208,4 +212,10 @@
 
 .project--card.rest--countries>.project--img {
   background: linear-gradient(90deg, #667bf3 0%, #4853f0 54%, #ad54f5 100%);
+}
+
+
+
+.project--card.bolt--store>.project--img {
+  background: linear-gradient(90deg, #b3b0b1 0%, #949393 54%, #b8b5b6 100%);
 }

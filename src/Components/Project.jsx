@@ -46,6 +46,7 @@ function Project({ data, setLevel, filterProjects, fetch }) {
           <option value="newbie">Newbie</option>
           <option value="junior">Junior</option>
           <option value="intermediate">Intermediate</option>
+          <option value="advance">Advance</option>
         </select>
       </div>
       <div className="project--wrapper">

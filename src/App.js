@@ -65,6 +65,13 @@ function App() {
           setFetch(false);
         }, 1000);
         break;
+      case "advance":
+        setFetch(true);
+        setFilterProjects(data.filter((item) => item.level === "advance"));
+        setTimeout(() => {
+          setFetch(false);
+        }, 1000);
+        break;
       default:
         setFetch(true);
         setFilterProjects(data);
@@ -74,7 +81,6 @@ function App() {
         break;
     }
   };
-
   return (
     <div className="App">
       <Header theme={theme} setTheme={setTheme} />

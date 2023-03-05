@@ -247,4 +247,12 @@ export default [
     color: "rest--countries",
     level: "advance",
   },
+  {
+    images: "./images/bolt-store.png",
+    title: "Bolt Electronic in ViteJS React with GSAP",
+    githubUrl: "https://github.com/dazzlerabhi30800/bolt-electronic-store",
+    liveUrl: "https://incredible-brioche-210447.netlify.app/",
+    color: "bolt--store",
+    level: "intermediate",
+  },
 ];
